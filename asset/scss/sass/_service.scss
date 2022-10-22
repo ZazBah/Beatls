@@ -1,0 +1,66 @@
+.section_service{
+    padding-top: 60px;
+
+    h4{
+        @include heading2;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .card{
+        padding: 10px;
+        margin-bottom: 60px;
+        width: 100%;
+        position: relative;
+        background-color: var(--color-white);
+        border-radius: 3px;
+        transition: all linear 0.3s;
+
+        .icon_div{
+            padding: 10px;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #fff;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .inner_icon_div{
+                padding: 25%;
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                background-color: var(--color-white);
+                outline: 3px solid var(--color-white);
+                outline-offset: 4px;
+                transition: all linear 0.3s;
+            }
+        }
+
+        h5{
+            @include heading2;
+            text-align: center;
+            margin-top: 60px;
+            font-size: var(--font-size-normal);
+            font-weight: 500;
+        }
+        p{
+            @include pera;
+            color: var(--color-black);
+            text-align: center;
+        }
+
+        &:hover{
+            box-shadow: 0px 3px 5px #000;
+
+            .icon_div{
+                .inner_icon_div{
+                    background-color: var(--color-blue);
+                    outline-color: var(--color-blue);
+                }
+            }
+        }
+    }
+}

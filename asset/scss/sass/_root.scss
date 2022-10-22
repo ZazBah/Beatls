@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&display=swap');
+
+:root{
+
+    --color-blue-dark: #0872b9;
+    --color-white: #e7e7e7;
+    --color-black: #000000;
+    --color-blue: #5bc5f4;
+    --color-white-light: #f1f1f1;
+    --color-grey: #353535;
+    --color-grey-light: #555555;
+
+    --font-link:  'Montserrat', sans-serif;
+    --font-heading: 'Oswald', sans-serif;
+    --font-pera:  'Open Sans', sans-serif;
+
+    --font-size-small: 13px;
+    --font-size-normal: 16px;
+    --font-size-medium: 24px;
+    --font-size-learge: 30px;
+    --font-size-big: 40px;
+
+    @media screen and (max-width: 768px){
+        --font-size-normal: ;
+        --font-size-medium: ;
+        --font-size-learge: ;
+    }
+    @media screen and (max-width: 320px){
+        --font-size-normal: ;
+        --font-size-medium: ;
+        --font-size-learge: ;
+    }
+}
+
+@mixin heading1 {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    color: #fff;
+}
+@mixin heading2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-medium);
+    text-transform: uppercase;
+    color: var(--color-black);
+    font-weight: 700;
+}
+@mixin pera {
+    font-family: var(--font-pera);
+    font-size: var(--font-size-normal);
+    color: var(--color-white);
+    font-weight: 500;
+}
+.opacity0{
+    opacity: 0;
+}
+.imgbox{
+    width: 100%;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
+}
+.mb_20{
+    margin-bottom: 20px;
+}

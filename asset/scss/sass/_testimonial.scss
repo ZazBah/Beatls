@@ -1,0 +1,91 @@
+.section_testimonial{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h4{
+        @include heading2;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .card{
+        background-color: #fff;
+        border: none;
+
+        .card_header{
+            height: 120px;
+            position: relative;
+
+            .profile_img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: var(--color-white);
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%);
+    
+                .imgbox{
+                    width: 300%;
+                    transform: translate(-31%);
+                }
+            }
+        }
+        .card_body{
+            height: 210px;
+            background-color: var(--color-white);
+            border-radius: 3px;
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 49%;
+                width: 50px;
+                height: 50px;
+                background-color: var(--color-white);
+                transform: rotate(45deg) translate(-45%);
+                z-index: 0;
+            }
+            .card_content{
+                padding: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                h5{
+                    @include heading2;
+                    text-align: center;
+                    font-size: var(--font-size-normal);
+                }
+                h6{
+                    @include heading2;
+                    text-align: center;
+                    font-size: var(--font-size-small);
+                    font-weight: 400;
+                    text-transform: none;
+                }
+                .ratings{
+                    width: 100%;
+                    text-align: center;
+
+                    span{
+                        i{
+                            color: var(--color-blue);
+                            font-size: var(--font-size-normal);
+                        }
+                    }
+                }
+                p{
+                    @include pera;
+                    color: var(--color-black);
+                    text-align: center;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
