@@ -1,5 +1,6 @@
 $('.menu-toggle-btn').click(function(){
-    $(this).toggleClass('fa-times');
-    $('.nav_02').toggleClass('visible').css({'animation-delay':'0.6s'});;
+    $(this).toggleClass('ri-menu-line');
+    $(this).toggleClass('ri-menu-4-fill');
+
     $('.nav-menu').toggleClass('active');
 })

@@ -44,6 +44,28 @@
     color: var(--color-black);
     font-weight: 700;
 }
+@mixin  heading3 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-medium);
+    text-transform: uppercase;
+    color: var(--color-black);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        background: url('../image/Shape_underline.png');
+        background-repeat: no-repeat;
+    }
+}
 @mixin pera {
     font-family: var(--font-pera);
     font-size: var(--font-size-normal);

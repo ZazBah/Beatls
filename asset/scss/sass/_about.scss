@@ -1,9 +1,7 @@
 .section_about{
     padding-top: 60px;
     h4{
-        @include heading2;
-        text-align: center;
-        margin-bottom: 40px;
+        @include heading3;
     }
 
     .profile_img{

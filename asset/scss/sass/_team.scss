@@ -2,9 +2,7 @@
     padding-top: 40px;
 
     h4{
-        @include heading2;
-        text-align: center;
-        margin-bottom: 30px;
+        @include heading3;
     }
 
     .card{
@@ -21,27 +19,31 @@
             transition: all linear 0.3s;
 
             ul{
+                padding: 0;
                 background-color: #00000080;
                 height: 100%;
                 width: 90px;
                 position: absolute;
+                padding-left: 20px;
+                padding-top: 10%;
                 top: 0;
                 right: -100%;
-                padding-top: 30px;
-                padding-left: 20px;
-                padding-right: 20px;
                 transition: all linear 0.3s;
 
 
                 li{
-                    margin-bottom: 20px;
+                    
+                    margin-bottom: 10px;
                     text-align: center;
-                    padding: 5px;
+                    padding: 7px;
+                    height: 50px;
+                    width: 50px;
                     border: 2px solid var(--color-white);
                     border-radius: 50%;
                     cursor: pointer;
                     transition: all linear 0.3s;
                     a{
+                        text-align: center;
                         color: var(--color-white);
                         font-size: var(--font-size-medium);
                         font-weight: 500;
